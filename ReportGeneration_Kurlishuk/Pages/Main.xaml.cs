@@ -63,7 +63,7 @@ namespace ReportGeneration_Kurlishuk.Pages
             List<StudentContext> SearchStudent = AllStudents;
             if (CBGroups.SelectedIndex != CBGroups.Items.Count - 1) 
             {
-                int IdGroup = AllGroups.Find(x => x.Name == CBGroups.SelectedItem).Id;
+                int IdGroup = AllGroups.Find(x => x.Name == CBGroups.SelectedItem).Id; 
                 SearchStudent = AllStudents.FindAll(x => x.IdGroup == IdGroup);
             }
             //сотртируем отсортированных студентов по ФИО
