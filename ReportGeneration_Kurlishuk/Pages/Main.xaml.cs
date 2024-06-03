@@ -61,7 +61,7 @@ namespace ReportGeneration_Kurlishuk.Pages
         private void SelectStudents(object sender, KeyEventArgs e)    
         {
             List<StudentContext> SearchStudent = AllStudents;
-            if (CBGroups.SelectedIndex != CBGroups.Items.Count - 1)
+            if (CBGroups.SelectedIndex != CBGroups.Items.Count - 1) 
             {
                 int IdGroup = AllGroups.Find(x => x.Name == CBGroups.SelectedItem).Id;
                 SearchStudent = AllStudents.FindAll(x => x.IdGroup == IdGroup);
