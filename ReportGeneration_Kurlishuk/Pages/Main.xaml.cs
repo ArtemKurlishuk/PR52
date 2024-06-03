@@ -55,7 +55,7 @@ namespace ReportGeneration_Kurlishuk.Pages
             {
                 int IdGroup = AllGroups.Find(x => x.Name == CBGroups.SelectedItem).Id;
                 Classes.Common.Report.Group(IdGroup, this);
-            }
+            } 
         }
 
         private void SelectStudents(object sender, KeyEventArgs e)    
