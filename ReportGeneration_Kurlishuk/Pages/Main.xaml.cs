@@ -58,7 +58,8 @@ namespace ReportGeneration_Kurlishuk.Pages
             }
         }
 
-        private void SelectStudents(object sender, KeyEventArgs e)          {
+        private void SelectStudents(object sender, KeyEventArgs e)    
+        {
             List<StudentContext> SearchStudent = AllStudents;
             if (CBGroups.SelectedIndex != CBGroups.Items.Count - 1)
             {
