@@ -54,7 +54,7 @@ namespace ReportGeneration_Kurlishuk.Pages
             if (CBGroups.SelectedIndex != CBGroups.Items.Count - 1)
             {
                 int IdGroup = AllGroups.Find(x => x.Name == CBGroups.SelectedItem).Id;
-                Classes.Common.Report.Group(IdGroup, this);
+                Classes.Common.Report.Group(IdGroup, this); 
             } 
         }
 
