@@ -66,7 +66,7 @@ namespace ReportGeneration_Kurlishuk.Pages
                 int IdGroup = AllGroups.Find(x => x.Name == CBGroups.SelectedItem).Id; 
                 SearchStudent = AllStudents.FindAll(x => x.IdGroup == IdGroup);
             }
-            //сотртируем отсортированных студентов по ФИО
+            //сотртируем отсортированных студентов по ФИО 
             CreateStudents(SearchStudent.FindAll(x => $"{x.Lastname} {x.Firstname}".Contains(TBFIO.Text)));
         }
 
