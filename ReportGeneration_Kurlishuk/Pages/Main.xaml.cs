@@ -48,7 +48,7 @@ namespace ReportGeneration_Kurlishuk.Pages
                 Parent.Children.Add(new Items.Student(Student, this));
         }
         
-        
+         
         public void ReportGeneration(object sender, System.Windows.RoutedEventArgs e)
         {
             if (CBGroups.SelectedIndex != CBGroups.Items.Count - 1)
